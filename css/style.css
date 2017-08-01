@@ -14,6 +14,7 @@ header {
   z-index: 1;
   width: 100%;
   background-color: #fff;
+  top: 0;
 }
 
 .fa-header {
@@ -26,7 +27,7 @@ header {
 
 .header__button {
   float: right;
-  margin: 23px 20px 0 0 ;
+  margin: 23px 20px 0 0;
   bottom: 15px;
   padding: 15px 20px;
   color: #fff;
@@ -35,29 +36,24 @@ header {
 }
 
 #navToggle {
-    display: none;
-    float: right;
-    margin: 30px 20px 30px 0;
-    width: 40px;
-    height: 25px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
+  display: none;
+  float: right;
+  margin: 30px 20px 30px 0;
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
-#navToggle div {
-    position: relative;
-  }
+.hunberger {
+  margin-top: 6px;
+  display: block;
+  width: 100%;
+  border-bottom: solid 4px #ddd;
+  position: relative;
+}
 
-#navToggle span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    border-bottom: solid 4px #ddd;
-  }
-
-#navToggle span:nth-child(1) { top: 0}
-#navToggle span:nth-child(2) { top: 11px}
-#navToggle span:nth-child(3) { top: 22px}
+.hunberger:first-child { margin-top: 0}
 
 nav { display: none; }
 
@@ -72,7 +68,8 @@ nav { display: none; }
   font-weight: bolder;
   color: #74cfae;
   width: 100%;
-  padding-top: 230px;
+  padding-top: 250px;
+  margin-top: 94px;
 }
 
 .bolt__h1 {
@@ -129,11 +126,11 @@ nav { display: none; }
 .our__latest__work {
   width: 100%;
   background-color: #F2F2F2;
+  padding-bottom: 70px;
 }
 
 .work__p {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   font-weight: lighter;
   padding-top: 50px;
@@ -185,25 +182,38 @@ nav { display: none; }
 
 .inner {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
 .table {
-  display: table;
+  display: block;
   text-align: center;
   width: 100%;
+  margin-top: 40px;
+  margin-bottom: 90px;
 }
 
 .table > li {
-  display: table-cell;
+  float: left;
+  margin-right: 100px;
+  width: 27%;
+  opacity: .6;
 }
 
-.table > li img { opacity: .6;}
+.table > li:nth-child(3n+3) {
+  margin-right: 0;
+}
 
-.table > li img:hover { opacity: 1;}
+.table > li:nth-child(n+4) {
+  margin-top: 80px;
+}
+
+.table > li:hover {
+  opacity: 1;
+}
 
 .our__table > li p {
   margin-top: 10px;
@@ -224,8 +234,8 @@ nav { display: none; }
 
 .sns__icon {
   width: 100%;
-  padding-top: 225px;
-  padding-bottom: 225px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #F2F2F2;
 }
 
@@ -245,7 +255,7 @@ nav { display: none; }
   width: 100%;
 }
 
-.sns__table >li { display: table-cell;}
+.sns__table > li { display: table-cell;}
 
 .link {
   display: block;
@@ -279,9 +289,26 @@ footer {
 
     .table > li {
       display: block;
+      float: none;
+      margin: 0 auto;
+      width: 100%;
     }
 
-    .margin { margin: 80px;}
+    .table > li:nth-child(3n+3) {
+      margin-right: auto;
+    }
+
+    .table > li:nth-child(n+4) {
+      margin-top: 0px;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .mt {
+      margin-top: 80px;
+    }
 
     .Bolt__theme {
       width: 100%;
@@ -308,7 +335,9 @@ footer {
       padding-bottom: 20px;
     }
 
-    .margin { margin: 80px; }
+    .margin {
+      margin: 80px;
+    }
 
     .work__cont {
       width: 100%;
@@ -324,6 +353,17 @@ footer {
       display: block;
       text-align: center;
       margin: 0 auto;
+    }
+
+    .sns__icon {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    .link {
+      margin-right: -15px;
+      margin-left: -15px;
+      padding: 55px 55px;
     }
 
     .our__table > li {
@@ -342,15 +382,11 @@ footer {
     .sns__table > li {
       display: block;
     }
-
-    .sns__icon {
-      padding: 50px 0;
-    }
   }
 
 /*---------------スマホーーーーーーーーーーー*/
 
-@media screen and ( max-width: 767px) {
+@media screen and ( max-width: 766px) {
 
       .header__header {
         border-top: 1px solid #ddd;
@@ -376,7 +412,12 @@ footer {
         display: block;
       }
 
-      a { text-decoration: none; }
+      .bolt__p {
+        font-size: 80px;
+        padding-top: 160px;
+      }
+
+      a { text-decoration: none;}
 
       a p {
         padding: 15px 0 0 10px;
@@ -397,8 +438,22 @@ footer {
       }
 
       .sns__table >li { display: block; }
+
+      .work__cont {
+        margin-top: 0px;
+      }
+
+      .sns__icon {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .our__table {
+        max-width: 200px;
+        margin: 0 auto;
+      }
     }
 
-@media screen and ( max-width: 333px) {
+@media screen and ( max-width: 320px) {
       .table > li img { width: 100%;}
       }
