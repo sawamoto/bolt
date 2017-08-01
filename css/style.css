@@ -1,0 +1,404 @@
+.body { position: relative;}
+
+/*------------PC----------------*/
+
+.cf::before,
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+}
+
+.fa-header {
+  padding: 15px 0;
+  float: left;
+  clear: both;
+  margin-left: 25px;
+  color: #777;
+}
+
+.header__button {
+  float: right;
+  margin: 23px 20px 0 0 ;
+  bottom: 15px;
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #74cfae;
+  border: none;
+}
+
+#navToggle {
+    display: none;
+    float: right;
+    margin: 30px 20px 30px 0;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+#navToggle div {
+    position: relative;
+  }
+
+#navToggle span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 4px #ddd;
+  }
+
+#navToggle span:nth-child(1) { top: 0}
+#navToggle span:nth-child(2) { top: 11px}
+#navToggle span:nth-child(3) { top: 22px}
+
+nav { display: none; }
+
+.Bolt__Theme {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.bolt__p {
+  text-align: center;
+  font-size: 90px;
+  font-weight: bolder;
+  color: #74cfae;
+  width: 100%;
+  padding-top: 230px;
+}
+
+.bolt__h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #c0c0c0;
+  margin-top: 30px;
+  padding-bottom: 250px;
+}
+
+.what__we__can__do {
+  width: 100%;
+  background-color: #74cfae;
+}
+
+.can__do__inner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0  auto;
+  font-size: 0;
+}
+
+.can__do__img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 55px;
+  margin-left: 100px;
+}
+
+.can__do__float {
+  display: inline-block;
+  vertical-align: middle;
+  width: 650px;
+  margin-left: 50px;
+}
+
+.can__do__p {
+  vertical-align: top;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.can__do__p2 {
+  vertical-align: middle;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+
+.our__latest__work {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.work__p {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.margin { margin: 80px;}
+
+.work__cont {
+  margin: 0 auto;
+  width: 900px;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  font-size: 0;
+}
+
+.work__cont__p1-2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 700px;
+}
+
+.work__cont__p1 {
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.work__button {
+  vertical-align: middle;
+  padding: 20px 50px;
+  margin-left: 35px;
+  color: #fff;
+  background-color: #74cfae;
+  border: none;
+}
+
+.our__skills {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #4e4e4e;
+}
+
+.skill__p {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.table {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.table > li {
+  display: table-cell;
+}
+
+.table > li img { opacity: .6;}
+
+.table > li img:hover { opacity: 1;}
+
+.our__table > li p {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.our__table {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.our__table > li {
+  display: table-cell;
+}
+
+.our__table > li p { margin-bottom: 88px;}
+
+.sns__icon {
+  width: 100%;
+  padding-top: 225px;
+  padding-bottom: 225px;
+  background-color: #F2F2F2;
+}
+
+.fa-fw { color: #74cfae;}
+
+.sns__inner {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.sns__table {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.sns__table >li { display: table-cell;}
+
+.link {
+  display: block;
+  padding: 70px 80px;
+}
+
+.link:hover {
+  background-color: #fff;
+}
+
+footer {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #74CFAE;
+}
+
+.f__p1 {
+  text-align: right;
+  color: #fff;
+}
+
+/*---------------------タブレット-----------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .table {
+      display: table;
+      text-align: center;
+      width: 100%;
+    }
+
+    .table > li {
+      display: block;
+    }
+
+    .margin { margin: 80px;}
+
+    .Bolt__theme {
+      width: 100%;
+      background-color: #F2F2F2;
+    }
+
+    .can__do__img {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+
+    .can__do__float {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .can__do__p {
+      margin-top: 15px;
+    }
+
+    .can__do__p2 {
+      padding-bottom: 20px;
+    }
+
+    .margin { margin: 80px; }
+
+    .work__cont {
+      width: 100%;
+    }
+
+    .work__cont__p1-2{
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .work__button {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .our__table > li {
+      display: block;
+    }
+
+    .our__table > li p { margin-bottom: 88px;}
+    }
+  }
+
+@media screen and ( max-width: 991px) {
+    .sns__table {
+      display: table;
+    }
+
+    .sns__table > li {
+      display: block;
+    }
+
+    .sns__icon {
+      padding: 50px 0;
+    }
+  }
+
+/*---------------スマホーーーーーーーーーーー*/
+
+@media screen and ( max-width: 767px) {
+
+      .header__header {
+        border-top: 1px solid #ddd;
+        position: absolute;
+        width: 100%;
+        top: 96px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        background-color: #fff;
+      }
+
+      .header__button {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: none;
+        float: none;
+      }
+
+      .header__button.is-active {
+        display: block;
+      }
+
+      a { text-decoration: none; }
+
+      a p {
+        padding: 15px 0 0 10px;
+        color: #fff;
+      }
+
+      #navToggle {
+        display: block;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10%;
+      }
+
+      .sns__table {
+        display: table;
+        text-align: center;
+        width: 100%;
+      }
+
+      .sns__table >li { display: block; }
+    }
+
+@media screen and ( max-width: 333px) {
+      .table > li img { width: 100%;}
+      }
